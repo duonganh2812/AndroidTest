@@ -26,6 +26,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Set permission
+          command: sudo chmod +x gradlew
+      - run:
           name: Build test and lint
           command: |
             ./gradlew assembleMockDebug assembleProdDebug assembleMockDebugAndroidTest testMockDebug testProdDebug lintMockDebug lintProdDebug
