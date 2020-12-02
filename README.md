@@ -1,37 +1,43 @@
-# AndroidX Test Library
+intro_android_demo
+==================
 
-The AndroidX Test Library provides an extensive framework for testing Android apps. This library provides a set of APIs that allow you to quickly build and run test code for your apps, including JUnit 4 and functional user interface (UI) tests. You can run tests created using these APIs from the Android Studio IDE or from the command line.
+Demo of app exercises for Intro to Android App Development
 
-For more details see [developers.android.com/testing](https://developers.android.com/testing)
+<img src="http://i.imgur.com/DzkMzcy.png" width="250" />&nbsp;
+<img src="http://i.imgur.com/VJWFW9Q.png" width="250" />
 
-## Contributing
+Sample Listing:
 
-See [CONTRIBUTING.md](https://github.com/android/android-test/blob/master/CONTRIBUTING.md)
-
-## Issues
-
-We use the
-[GitHub issue tracker](https://github.com/android/android-test/issues) for
-tracking feature requests and bugs.
-
-Please see the
-[AndroidX Test Discuss mailing list](https://groups.google.com/forum/#!forum/androidx-test-discuss)
-for general questions and discussion, and please direct specific questions to
-[Stack Overflow](https://stackoverflow.com/questions/tagged/androidx-test).
-
-## Bazel integration
-
-To depend on this repository in Bazel, add the following snippet to your
-WORKSPACE file:
-
-```
-ATS_TAG = "<release-tag>"
-http_archive(
-    name = "android_test_support",
-    sha256 = "<sha256 of release>",
-    strip_prefix = "android-test-%s" % ATS_TAG,
-    urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_TAG],
-)
-load("@android_test_support//:repo.bzl", "android_test_repositories")
-android_test_repositories()
-```
+ - Chapter 1: App Fundamentals
+   - Basic TextViews Example
+ - Chapter 2: User Interface
+   - Linear Layout Demo
+ - Chapter 3: View Controls
+    - Layout Gravity
+    - Basic Views
+    - View Attributes
+    - Simple ListView
+ - Chapter 4: User Interactions
+   - Basic Click Handlers
+   - Handling ListView Clicks
+   - Action Bar Demo
+ - Chapter 5: User Flows
+   - Explicit Intents
+   - Implicit Intents
+   - Intent with Results
+ - Chapter 6: Networking
+   - Basic Image Download
+   - AsyncTask Example
+   - Smart Image Download
+ - Chapter 7: Advanced Views
+   - Toast Inputs
+   - Spinner Toast
+   - TimePicker
+   - ProgressBar
+   - GridView
+ - Chapter 8: Preferences
+   - Persist Settings
+ - Chapter 9: Content Providers
+   - Contact List
+ - Chapter 10: Publishing
+   - APK Instructions
